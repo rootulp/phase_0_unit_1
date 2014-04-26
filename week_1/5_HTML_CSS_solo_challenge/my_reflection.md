@@ -8,3 +8,10 @@
 * Which parts of the challenge did you find tedious?
 
 <!-- Add your reflection here. Remove the comment markers -->
+
+1. Difference between classes and ids. Spans and divs?
+2. ^
+3. Looking up articles with examples
+4. Confident but not much experience.
+5. Making the sidebar, content, and header
+6. Putting a caption on top of the picture took a while.
