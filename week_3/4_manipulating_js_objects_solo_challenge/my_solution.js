@@ -16,54 +16,72 @@ var terah = {
 1. Define a variable adam and use object literal notation to assign this variable 
    the value of a JavaScript Object object with no properties.
 
-2. Give adam a name property with the value "Adam".
+   create an empty var adam
+
+2. Give adam a name property with the value "Adam".]
+
+    edit adam.name and set it to "Adam"
 
 3. Add a spouse property to terah and assign it the value of adam.
 
+    edit terah.spuce and set it to adam (the variable adam)
+
 4. Change the value of the terah weight property to 125.
 
+    edit terah.weight and set it to 125 (int)
+
 5. Remove the eyeColor property from terah.
+  
+    delete terah.eyeColor
 
 6. Add a spouse property to adam and assign it the value of terah.
+
+    set adam.spouce equal to terah (similar to step 3)
 
 7. Add a children property to terah and and use object literal notation to assign 
    this variable the value of a JavaScript Object object with no properties
 
+   starts to get confusing here but create an empty object (variable?) for terah.children
+
 8. Add a carson property to the value of the terah children property and assign it 
   the value of an object with the property name with a value of "Carson".
+
+    set terah.children.carson to name = 'Carson'
 
 9. Add a carter property to the value of the terah children property and assign it 
    the value of an object with the property name with a value of "Carter".
 
+   step 8 for 'Carter'
+
 10. Add a colton property to the value of the terah children property and assign it 
     the value of an object with the property name with a value of "Colton".
 
+    step 8 for 'Colton'
+
 11. Add a children property to adam and assign it the value of terah children.
 
-
+    set adam.children equal to terah.children
 */
 
-// __________________________________________
 // Write your code below.
 
+var adam = {}
+adam.name = 'Adam';
+terah.spouse = adam;
+terah.weight = 125;
+delete terah.eyeColor;
+adam.spouse = terah;
+terah.children = {};
+terah.children.carson = {name: 'Carson'};
+terah.children.carter = {name: 'Carter'};
+terah.children.colton = {name: 'Colton'};
+adam.children =  terah.children;
 
-
-
-
-
-
-
-// __________________________________________
 // Reflection: Use the reflection guidelines
-// 
-// 
-// 
-// 
-// 
-// 
+// I enjoyed this exercise but I was pretty confused by JS object creation.
+// I'm not sure if I did this exercise correctly especially regarding terah's
+// empty children object and then adding names. 
 
-
-// __________________________________________
 // Driver Code:  Do not alter code below this line.
 function assert(test, message, test_number) {
   if (!test) {
